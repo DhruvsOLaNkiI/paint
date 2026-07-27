@@ -1,0 +1,6 @@
+{
+  "name": "BrushUpHomes",
+  "description": "BrushUpHomes — painting services and waterproofing across Delhi NCR. Book a free survey. Interior renovation coming soon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
