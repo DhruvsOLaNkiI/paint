@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import OfferBanner from './OfferBanner';
+import Logo from './Logo';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,19 +53,16 @@ export default function Navigation() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#050D26]/95 backdrop-blur-md border-b border-white/10">
       <div className="pt-3 pb-2">
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14 relative">
+          <div className="flex items-center justify-between h-16 relative">
             <div className="flex-shrink-0 z-20">
-              <Link to="/" className="font-sans text-xl sm:text-2xl tracking-tight uppercase">
-                <span className="text-brand-offwhite font-bold">BrushUp</span>
-                <span className="text-brand-gold font-bold">Homes</span>
-              </Link>
+              <Logo variant="onDark" />
             </div>
 
             <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 z-20">
-              <ul className="flex items-center bg-brand-slate-dark border border-brand-border rounded-full p-1.5">
+              <ul className="flex items-center bg-white/5 border border-white/15 rounded-full p-1.5">
                 {links.map((link, idx) => {
                   const isActive = activeSection === link.section;
                   return (
@@ -74,14 +72,14 @@ export default function Navigation() {
                         onClick={() => setActiveSection(link.section)}
                         className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                           isActive
-                            ? 'bg-brand-gold text-white shadow-sm'
-                            : 'text-slate-600 hover:text-brand-gold hover:bg-white'
+                            ? 'bg-white text-[#050D26] shadow-sm'
+                            : 'text-white/75 hover:text-white hover:bg-white/10'
                         }`}
                       >
                         {link.name}
                       </Link>
                       {idx < links.length - 1 && (
-                        <span className="w-px h-4 bg-brand-border mx-1" />
+                        <span className="w-px h-4 bg-white/20 mx-1" />
                       )}
                     </li>
                   );
@@ -92,7 +90,7 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4 z-20">
               <button
                 onClick={goToServices}
-                className="px-6 py-2.5 bg-brand-gold text-white text-sm uppercase tracking-widest font-semibold rounded-full hover:bg-brand-gold-hover transition-all duration-300"
+                className="px-6 py-2.5 bg-white text-[#050D26] text-sm uppercase tracking-widest font-semibold rounded-full hover:bg-sky-100 transition-all duration-300"
               >
                 Book Survey
               </button>
@@ -101,7 +99,7 @@ export default function Navigation() {
             <div className="lg:hidden z-20">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-full border border-brand-border text-brand-offwhite hover:text-brand-gold hover:border-brand-gold/40 transition-colors bg-white"
+                className="p-2 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors"
                 aria-label="Toggle menu"
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -119,7 +117,7 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden absolute top-[5.25rem] left-4 right-4 mt-2 bg-white border border-brand-border rounded-2xl shadow-lg overflow-hidden"
+            className="lg:hidden absolute top-[5.25rem] left-4 right-4 mt-2 bg-[#050D26] border border-white/15 rounded-2xl shadow-lg overflow-hidden"
           >
             <ul className="px-4 py-6 space-y-2">
               {links.map((link) => (
@@ -132,8 +130,8 @@ export default function Navigation() {
                     }}
                     className={`block px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                       activeSection === link.section
-                        ? 'bg-brand-gold text-white'
-                        : 'text-slate-700 hover:text-brand-gold hover:bg-brand-slate-dark'
+                        ? 'bg-white text-[#050D26]'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                     }`}
                   >
                     {link.name}
@@ -143,7 +141,7 @@ export default function Navigation() {
               <li className="pt-4 px-2">
                 <button
                   onClick={goToServices}
-                  className="w-full py-4 bg-brand-gold text-white text-sm uppercase tracking-widest font-bold rounded-xl hover:bg-brand-gold-hover transition-colors duration-300"
+                  className="w-full py-4 bg-white text-[#050D26] text-sm uppercase tracking-widest font-bold rounded-xl hover:bg-sky-100 transition-colors duration-300"
                 >
                   Book Survey
                 </button>

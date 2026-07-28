@@ -4,7 +4,6 @@ import Stats from '../components/Stats';
 import Guarantees from '../components/Guarantees';
 import Services from '../components/Services';
 import TechFeatures from '../components/TechFeatures';
-import BeforeAfter from '../components/BeforeAfter';
 import SocialProof from '../components/SocialProof';
 import Journey from '../components/Journey';
 import ContactForm from '../components/ContactForm';
@@ -21,7 +20,6 @@ export default function HomePage() {
         <Guarantees />
         <Services />
         <TechFeatures />
-        <BeforeAfter />
         <SocialProof />
         <Journey />
         <ContactForm />

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 export default function Footer() {
   return (
@@ -6,10 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="lg:col-span-1">
-            <Link to="/" className="font-sans text-2xl tracking-tight uppercase inline-block mb-6">
-              <span className="text-brand-offwhite font-bold">BrushUp</span>
-              <span className="text-brand-gold font-bold">Homes</span>
-            </Link>
+            <Logo size="md" variant="onLight" className="mb-6" />
             <p className="text-sm text-slate-500 leading-relaxed mb-6">
               Painting services and waterproofing across Delhi NCR. Interior renovation coming soon.
             </p>
