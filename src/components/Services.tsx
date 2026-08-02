@@ -16,7 +16,7 @@ const services = [
     title: 'Waterproofing',
     description:
       'Terrace, bathroom, and basement waterproofing with expert inspection and lasting protection.',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1024',
+    image: '/waterproofing.jpg',
     href: '/services?category=Waterproofing',
   },
   {

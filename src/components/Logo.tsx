@@ -8,22 +8,19 @@ interface LogoProps {
 }
 
 export default function Logo({ className = '', size = 'sm', variant = 'onDark' }: LogoProps) {
-  const height =
-    size === 'md'
-      ? 'h-14'
-      : 'h-12 sm:h-14';
+  const height = size === 'md' ? 'h-9 sm:h-10' : 'h-7 sm:h-8';
   const src = variant === 'onLight' ? '/logo-on-light.png' : '/logo-on-dark.png';
 
   return (
     <Link
       to="/"
       className={`inline-flex items-center ${className}`}
-      aria-label="BrushUp Home"
+      aria-label="BrushUpHomes"
     >
       <img
         src={src}
-        alt="BrushUp Home"
-        className={`${height} w-auto max-w-[200px] sm:max-w-[240px] object-contain object-left`}
+        alt="BrushUpHomes"
+        className={`${height} w-auto max-w-[150px] sm:max-w-[170px] object-contain object-left`}
       />
     </Link>
   );

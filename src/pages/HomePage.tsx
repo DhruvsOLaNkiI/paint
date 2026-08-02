@@ -16,9 +16,9 @@ export default function HomePage() {
       <Navigation />
       <main>
         <Hero />
-        <Stats />
         <Guarantees />
         <Services />
+        <Stats />
         <TechFeatures />
         <SocialProof />
         <Journey />

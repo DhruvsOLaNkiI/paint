@@ -19,8 +19,7 @@ const heroSlides = [
     subtitle: 'Weather-resistant coats that protect and refresh your building facade.',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2400',
+    image: '/waterproofing.jpg',
     eyebrow: 'Leak Protection',
     title: 'Waterproofing',
     subtitle: 'Terrace, bathroom, and basement waterproofing with expert survey.',
@@ -42,7 +41,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative pt-36 pb-20 lg:pt-44 lg:pb-28 overflow-hidden min-h-[90vh] flex items-center"
+      className="relative pt-28 pb-20 lg:pt-32 lg:pb-28 overflow-hidden min-h-[90vh] flex items-center"
     >
       {/* Clear full-bleed background — no white wash */}
       <div className="absolute inset-0 z-0">

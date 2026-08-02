@@ -62,12 +62,14 @@ export default function Footer() {
             <address className="not-italic text-sm text-slate-500 space-y-3">
               <p className="flex items-start">
                 <span className="text-brand-gold mr-2 mt-0.5">•</span>
-                BrushUpHomes HQ, Sector 16<br />
-                Noida, UP 201301
+                200 Cassia Estate, Pocket A<br />
+                Greater Noida, Uttar Pradesh — 201310
               </p>
               <p className="flex items-center">
                 <span className="text-brand-gold mr-2">•</span>
-                +91 (11) 4567 8900
+                <a href="tel:+917827710110" className="hover:text-brand-gold transition-colors">
+                  +91 78277 10110
+                </a>
               </p>
               <p className="flex items-center">
                 <span className="text-brand-gold mr-2">•</span>

@@ -78,7 +78,7 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-brand-slate-dark text-brand-offwhite font-sans antialiased selection:bg-brand-gold/20 selection:text-brand-offwhite">
       <Navigation />
 
-      <main className="pt-40 pb-24 relative overflow-hidden">
+      <main className="pt-28 pb-24 relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(27,79,114,0.06),_transparent_55%)]" />
         </div>

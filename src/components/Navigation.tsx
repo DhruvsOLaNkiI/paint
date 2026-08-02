@@ -54,15 +54,15 @@ export default function Navigation() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#050D26]/95 backdrop-blur-md border-b border-white/10">
-      <div className="pt-3 pb-2">
+      <div className="py-1">
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 relative">
+          <div className="flex items-center justify-between h-11 relative">
             <div className="flex-shrink-0 z-20">
               <Logo variant="onDark" />
             </div>
 
             <nav className="hidden lg:flex absolute left-1/2 -translate-x-1/2 z-20">
-              <ul className="flex items-center bg-white/5 border border-white/15 rounded-full p-1.5">
+              <ul className="flex items-center bg-white/5 border border-white/15 rounded-full p-1">
                 {links.map((link, idx) => {
                   const isActive = activeSection === link.section;
                   return (
@@ -70,7 +70,7 @@ export default function Navigation() {
                       <Link
                         to={link.href}
                         onClick={() => setActiveSection(link.section)}
-                        className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                        className={`px-3.5 py-1.5 rounded-full text-xs font-medium transition-all duration-300 ${
                           isActive
                             ? 'bg-white text-[#050D26] shadow-sm'
                             : 'text-white/75 hover:text-white hover:bg-white/10'
@@ -79,7 +79,7 @@ export default function Navigation() {
                         {link.name}
                       </Link>
                       {idx < links.length - 1 && (
-                        <span className="w-px h-4 bg-white/20 mx-1" />
+                        <span className="w-px h-3 bg-white/20 mx-0.5" />
                       )}
                     </li>
                   );
@@ -90,7 +90,7 @@ export default function Navigation() {
             <div className="hidden lg:flex items-center space-x-4 z-20">
               <button
                 onClick={goToServices}
-                className="px-6 py-2.5 bg-white text-[#050D26] text-sm uppercase tracking-widest font-semibold rounded-full hover:bg-sky-100 transition-all duration-300"
+                className="px-4 py-1.5 bg-white text-[#050D26] text-xs uppercase tracking-widest font-semibold rounded-full hover:bg-sky-100 transition-all duration-300"
               >
                 Book Survey
               </button>
@@ -99,10 +99,10 @@ export default function Navigation() {
             <div className="lg:hidden z-20">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors"
+                className="p-1.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors"
                 aria-label="Toggle menu"
               >
-                {isOpen ? <X size={24} /> : <Menu size={24} />}
+                {isOpen ? <X size={18} /> : <Menu size={18} />}
               </button>
             </div>
           </div>
@@ -117,7 +117,7 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="lg:hidden absolute top-[5.25rem] left-4 right-4 mt-2 bg-[#050D26] border border-white/15 rounded-2xl shadow-lg overflow-hidden"
+            className="lg:hidden absolute top-[3.75rem] left-4 right-4 mt-2 bg-[#050D26] border border-white/15 rounded-2xl shadow-lg overflow-hidden"
           >
             <ul className="px-4 py-6 space-y-2">
               {links.map((link) => (

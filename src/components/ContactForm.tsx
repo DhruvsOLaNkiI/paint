@@ -238,7 +238,7 @@ export default function ContactForm() {
           className="relative min-h-[420px] lg:min-h-full overflow-hidden"
         >
           <img
-            src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=1600"
+            src="/interior-painting.png"
             alt="BrushUpHomes painting service"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -248,11 +248,13 @@ export default function ContactForm() {
             <ul className="space-y-3 text-sm text-white/90">
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-sky-200" />
-                <span>Sector 16, Noida, UP, India</span>
+                <span>200 Cassia Estate, Pocket A, Greater Noida, Uttar Pradesh — 201310</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 shrink-0 text-sky-200" />
-                <span>+91 (11) 4567 8900</span>
+                <a href="tel:+917827710110" className="hover:text-white transition-colors">
+                  +91 78277 10110
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 shrink-0 text-sky-200" />

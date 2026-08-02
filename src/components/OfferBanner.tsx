@@ -6,7 +6,7 @@ export default function OfferBanner() {
     <div className="w-full bg-[#0A1638] border-y border-white/10">
       <Link
         to="/services"
-        className="flex items-center justify-center gap-2 px-4 py-2.5 text-center group"
+        className="flex items-center justify-center gap-2 px-4 py-1.5 text-center group"
       >
         <Sparkles className="hidden sm:block w-3.5 h-3.5 text-sky-300 shrink-0" />
         <p className="text-[11px] sm:text-xs md:text-sm text-white/85 font-medium tracking-wide">

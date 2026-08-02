@@ -51,7 +51,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white text-brand-offwhite font-sans antialiased selection:bg-brand-gold/20">
       <Navigation />
 
-      <main className="pt-[7.5rem]">
+      <main className="pt-[5.75rem]">
         {/* Hero */}
         <section className="relative overflow-hidden min-h-[420px] flex items-center">
           <img

@@ -6,7 +6,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white text-brand-offwhite font-sans antialiased selection:bg-brand-gold/20 selection:text-brand-offwhite">
       <Navigation />
-      <main className="pt-[7.5rem]">
+      <main className="pt-[5.75rem]">
         <ContactForm />
       </main>
       <Footer />

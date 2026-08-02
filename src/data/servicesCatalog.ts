@@ -66,7 +66,7 @@ export const catalogServices: CatalogService[] = [
     title: 'Rental Painting',
     tag: 'Quick Turnaround',
     category: 'Painting',
-    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1200',
+    image: '/rental-painting.jpg',
     description:
       'Fast, neat painting packages for rental properties — ready for new tenants with minimal disruption.',
     bookable: true,
@@ -76,7 +76,7 @@ export const catalogServices: CatalogService[] = [
     title: 'Texture',
     tag: 'Accent & Designer Finishes',
     category: 'Painting',
-    image: 'https://images.unsplash.com/photo-1615529328331-f8917597711f?auto=format&fit=crop&q=80&w=1200',
+    image: '/texture.png',
     description:
       'Designer wall textures, metallic accents, and feature finishes that elevate any space.',
     bookable: true,
@@ -86,7 +86,7 @@ export const catalogServices: CatalogService[] = [
     title: 'Polishing',
     tag: 'Wood & Surface Shine',
     category: 'Painting',
-    image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1200',
+    image: '/polishing.jpg',
     description:
       'Professional polishing for woodwork, doors, and furniture surfaces for a lasting shine.',
     bookable: true,
@@ -96,15 +96,15 @@ export const catalogServices: CatalogService[] = [
     title: 'Waterproofing',
     tag: 'Terrace, Bathroom & Basement',
     category: 'Waterproofing',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200',
+    image: '/waterproofing.jpg',
     description:
       'Multi-layer waterproofing for terraces, bathrooms, basements, and external walls. Expert inspection, quality membranes, and long-lasting leak protection — book a free survey to get a site-specific plan.',
     bookable: true,
     gallery: [
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1200',
-      'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1200',
+      '/waterproofing.jpg',
       'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=1200',
+      'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1200',
     ],
   },
   {
