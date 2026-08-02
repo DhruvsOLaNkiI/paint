@@ -13,12 +13,11 @@ export interface CatalogService {
 }
 
 export const serviceCities = [
-  'Delhi',
-  'Faridabad',
-  'Ghaziabad',
-  'Gurugram',
-  'Greater Noida',
   'Noida',
+  'Greater Noida',
+  'Greater Noida West',
+  'Noida Yamuna Expressway',
+  'Delhi NCR (Coming Soon)',
   'Others',
 ] as const;
 
